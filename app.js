@@ -31,7 +31,8 @@ function sortearAmigo(){
     }else{
         let indiceAleatorio = Math.floor(Math.random() * amigos.length);
         let amigoSorteado = amigos[indiceAleatorio];
-        resultado.innerHTML = (`El amigo sorteado fue ${amigoSorteado}!`)
+        resultado.innerHTML = (`El amigo sorteado fue ${amigoSorteado}!`);
+        amigos.splice(indiceAleatorio,1);
     }
     
 }
